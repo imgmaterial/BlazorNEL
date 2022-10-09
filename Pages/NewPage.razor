@@ -1,0 +1,14 @@
+@page "/newpage"
+
+<h1>My new page</h1>
+
+<button class="btn btn-primary" @onclick="IncrementCount">New Button</button>
+
+@code {
+    private int currentCount = 0;
+
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+}
